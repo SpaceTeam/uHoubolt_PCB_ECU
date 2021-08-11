@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name TXV_LIB)(type Legacy)(uri ${KIPRJMOD}/../TXV_Library_PCB/TXV_Library_Symbols.lib)(options "")(descr ""))
   (lib (name SCB-rescue)(type Legacy)(uri C:/Users/denis/Documents/SpaceTeam/Houbolt/TXV_TestStandElectronics/SCB/SCB-rescue.lib)(options "")(descr ""))
+  (lib (name uHoubolt_PCB_FCU-rescue)(type Legacy)(uri ${KIPRJMOD}/uHoubolt_PCB_FCU-rescue.lib)(options "")(descr ""))
 )

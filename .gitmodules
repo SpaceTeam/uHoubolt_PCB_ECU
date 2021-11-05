@@ -1,6 +1,4 @@
 [submodule "TXV_Library_PCB"]
 	path = TXV_Library_PCB
-	url = https://github.com/SpaceTeam/TXV_Library_PCB
-[submodule "uHoubolt_PCB_Main"]
-	path = uHoubolt_PCB_Main
-	url = https://github.com/SpaceTeam/uHoubolt_PCB_Main
+	url = git@github.com:SpaceTeam/TXV_Library_PCB.git
+

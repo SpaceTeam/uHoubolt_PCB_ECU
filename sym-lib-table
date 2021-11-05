@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name TXV_LIB)(type Legacy)(uri ${KIPRJMOD}/TXV_Library_PCB/TXV_Library_Symbols.lib)(options "")(descr ""))
+)

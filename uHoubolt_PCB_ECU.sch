@@ -4174,11 +4174,13 @@ Wire Wire Line
 	4300 9250 4500 9250
 NoConn ~ 8900 3800
 NoConn ~ 8900 3700
+Text Notes 7200 350  0    50   ~ 0
+- if using INA180 -> place on high-side of circuit, above MOSFET.\n   in case of other OP-AMP: choose one with rail-to-rail amplification!\n- if necessary, replace MOS with another model
 $Sheet
 S 8900 3550 1700 2400
 U 6015C35D
-F0 "MCU" 50
-F1 "../uHoubolt_PCB_Main/uHoubolt_PCB_Main/uHoubolt_PCB_Main.sch" 50
+F0 "MCU + Periphery" 50
+F1 "MCU_Periphery.sch" 50
 F2 "SPI1_~CS" O R 10600 4250 50 
 F3 "QSPI1_CLK" B R 10600 4750 50 
 F4 "I2C4_SCL" O L 8900 4750 50 
@@ -4220,6 +4222,4 @@ F39 "A_PWM_15(PC5)" B L 8900 5850 50
 F40 "CAN1_L" B R 10600 4900 50 
 F41 "CAN1_H" B R 10600 5000 50 
 $EndSheet
-Text Notes 7200 350  0    50   ~ 0
-- if using INA180 -> place on high-side of circuit, above MOSFET.\n   in case of other OP-AMP: choose one with rail-to-rail amplification!\n- if necessary, replace MOS with another model
 $EndSCHEMATC

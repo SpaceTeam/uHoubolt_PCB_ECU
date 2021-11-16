@@ -1,0 +1,376 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 17 17
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6200 4475 6125 4475
+Wire Wire Line
+	6200 3875 6325 3875
+Connection ~ 6200 3875
+Wire Wire Line
+	6200 3875 6200 4475
+$Comp
+L Device:R_Small R?
+U 1 1 639C464D
+P 6300 4450
+AR Path="/639C464D" Ref="R?"  Part="1" 
+AR Path="/638A960E/639C464D" Ref="R35"  Part="1" 
+AR Path="/64156100/639C464D" Ref="R64"  Part="1" 
+AR Path="/6419F64A/639C464D" Ref="R69"  Part="1" 
+F 0 "R69" H 6250 4425 50  0000 R CNN
+F 1 "1k" H 6250 4500 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6300 4450 50  0001 C CNN
+F 3 "~" H 6300 4450 50  0001 C CNN
+	1    6300 4450
+	-1   0    0    1   
+$EndComp
+Text Notes 5300 4950 0    50   ~ 0
+R_ILIM = 22k\n--> 2A Current Limit
+Text Notes 6350 4375 0    50   ~ 0
+1k*Iout/1040
+Wire Wire Line
+	4875 3875 4900 3875
+$Comp
+L power:GND #PWR?
+U 1 1 639C4656
+P 4875 3875
+AR Path="/639C4656" Ref="#PWR?"  Part="1" 
+AR Path="/638A960E/639C4656" Ref="#PWR0123"  Part="1" 
+AR Path="/64156100/639C4656" Ref="#PWR0180"  Part="1" 
+AR Path="/6419F64A/639C4656" Ref="#PWR0187"  Part="1" 
+F 0 "#PWR0187" H 4875 3625 50  0001 C CNN
+F 1 "GND" V 4875 3675 50  0000 C CNN
+F 2 "" H 4875 3875 50  0001 C CNN
+F 3 "" H 4875 3875 50  0001 C CNN
+	1    4875 3875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3875 5150 3875
+$Comp
+L TXV_LIB:Pyro #PWR?
+U 1 1 639C465D
+P 5150 3700
+AR Path="/639C465D" Ref="#PWR?"  Part="1" 
+AR Path="/638A960E/639C465D" Ref="#PWR0124"  Part="1" 
+AR Path="/64156100/639C465D" Ref="#PWR0181"  Part="1" 
+AR Path="/6419F64A/639C465D" Ref="#PWR0188"  Part="1" 
+F 0 "#PWR0188" H 5150 3550 50  0001 C CNN
+F 1 "Pyro" H 5150 3850 50  0000 C CNN
+F 2 "" H 5150 3700 50  0001 C CNN
+F 3 "" H 5150 3700 50  0001 C CNN
+	1    5150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 639C4663
+P 5000 3875
+AR Path="/639C4663" Ref="C?"  Part="1" 
+AR Path="/638A960E/639C4663" Ref="C45"  Part="1" 
+AR Path="/64156100/639C4663" Ref="C60"  Part="1" 
+AR Path="/6419F64A/639C4663" Ref="C61"  Part="1" 
+F 0 "C61" V 4900 3825 50  0000 L CNN
+F 1 "100n" V 5100 3775 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5000 3875 50  0001 C CNN
+F 3 "" H 5000 3875 50  0001 C CNN
+	1    5000 3875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 4375 5200 4575
+Wire Wire Line
+	5225 4375 5200 4375
+Wire Wire Line
+	5200 4175 5225 4175
+$Comp
+L power:+3V3 #PWR?
+U 1 1 639C466C
+P 5200 4175
+AR Path="/639C466C" Ref="#PWR?"  Part="1" 
+AR Path="/638A960E/639C466C" Ref="#PWR0125"  Part="1" 
+AR Path="/64156100/639C466C" Ref="#PWR0182"  Part="1" 
+AR Path="/6419F64A/639C466C" Ref="#PWR0189"  Part="1" 
+F 0 "#PWR0189" H 5200 4025 50  0001 C CNN
+F 1 "+3V3" V 5200 4400 50  0000 C CNN
+F 2 "" H 5200 4175 50  0001 C CNN
+F 3 "" H 5200 4175 50  0001 C CNN
+	1    5200 4175
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 4275 5100 4325
+Wire Wire Line
+	5225 4275 5100 4275
+Wire Wire Line
+	5100 4525 5100 4575
+$Comp
+L Device:R_Small R?
+U 1 1 639C4675
+P 5100 4425
+AR Path="/639C4675" Ref="R?"  Part="1" 
+AR Path="/638A960E/639C4675" Ref="R33"  Part="1" 
+AR Path="/64156100/639C4675" Ref="R62"  Part="1" 
+AR Path="/6419F64A/639C4675" Ref="R67"  Part="1" 
+F 0 "R67" H 5050 4400 50  0000 R CNN
+F 1 "22k" H 5050 4475 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 4425 50  0001 C CNN
+F 3 "~" H 5100 4425 50  0001 C CNN
+	1    5100 4425
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5200 4575 5150 4575
+Wire Wire Line
+	5100 4575 5150 4575
+Connection ~ 5150 4575
+Wire Wire Line
+	4825 4525 4825 4575
+Connection ~ 5100 4575
+Wire Wire Line
+	4825 4575 5100 4575
+Connection ~ 5200 4575
+Wire Wire Line
+	5225 4575 5200 4575
+Wire Wire Line
+	5150 4675 5150 4750
+Wire Wire Line
+	5150 4575 5150 4675
+Connection ~ 5150 4675
+Wire Wire Line
+	5225 4675 5150 4675
+Connection ~ 5150 3875
+Wire Wire Line
+	5225 3875 5150 3875
+Wire Wire Line
+	6150 4300 6150 4175
+Wire Wire Line
+	6300 4300 6150 4300
+NoConn ~ 6125 4075
+Wire Wire Line
+	6300 4575 6300 4550
+$Comp
+L power:GND #PWR?
+U 1 1 639C468D
+P 6300 4575
+AR Path="/639C468D" Ref="#PWR?"  Part="1" 
+AR Path="/638A960E/639C468D" Ref="#PWR0126"  Part="1" 
+AR Path="/64156100/639C468D" Ref="#PWR0183"  Part="1" 
+AR Path="/6419F64A/639C468D" Ref="#PWR0190"  Part="1" 
+F 0 "#PWR0190" H 6300 4325 50  0001 C CNN
+F 1 "GND" H 6300 4425 50  0000 C CNN
+F 2 "" H 6300 4575 50  0001 C CNN
+F 3 "" H 6300 4575 50  0001 C CNN
+	1    6300 4575
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4300 6300 4350
+Connection ~ 6300 4300
+Wire Wire Line
+	6900 4300 6300 4300
+Wire Wire Line
+	6125 4175 6150 4175
+Wire Wire Line
+	6150 3875 6200 3875
+Wire Wire Line
+	6150 3875 6125 3875
+Connection ~ 6150 3875
+Wire Wire Line
+	6150 3775 6150 3875
+Wire Wire Line
+	6125 3775 6150 3775
+$Comp
+L TXV_LIB:TPS1HC100 U?
+U 1 1 639C469C
+P 5675 4225
+AR Path="/639C469C" Ref="U?"  Part="1" 
+AR Path="/638A960E/639C469C" Ref="U11"  Part="1" 
+AR Path="/64156100/639C469C" Ref="U18"  Part="1" 
+AR Path="/6419F64A/639C469C" Ref="U19"  Part="1" 
+F 0 "U19" H 5675 4900 50  0000 C CNN
+F 1 "TPS1HC100" H 5675 4825 50  0000 C CNN
+F 2 "Package_SO:HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3.1mm" H 5675 3575 50  0001 C CNN
+F 3 "" H 5675 4225 50  0001 C CNN
+	1    5675 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 639C46A2
+P 4825 4200
+AR Path="/6015C35D/639C46A2" Ref="R?"  Part="1" 
+AR Path="/639C46A2" Ref="R?"  Part="1" 
+AR Path="/638A960E/639C46A2" Ref="R32"  Part="1" 
+AR Path="/64156100/639C46A2" Ref="R61"  Part="1" 
+AR Path="/6419F64A/639C46A2" Ref="R66"  Part="1" 
+F 0 "R66" H 4700 4225 50  0000 C CNN
+F 1 "120" H 4700 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4825 4200 50  0001 C CNN
+F 3 "~" H 4825 4200 50  0001 C CNN
+	1    4825 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5225 4075 4825 4075
+Wire Wire Line
+	4825 4075 4725 4075
+Connection ~ 4825 4075
+Wire Wire Line
+	4825 4100 4825 4075
+Wire Wire Line
+	6600 3650 6550 3650
+$Comp
+L Device:R_Small R?
+U 1 1 639C46AD
+P 6450 3650
+AR Path="/639C46AD" Ref="R?"  Part="1" 
+AR Path="/638A960E/639C46AD" Ref="R36"  Part="1" 
+AR Path="/64156100/639C46AD" Ref="R65"  Part="1" 
+AR Path="/6419F64A/639C46AD" Ref="R70"  Part="1" 
+F 0 "R70" V 6600 3575 50  0000 L CNN
+F 1 "22k" V 6525 3575 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6450 3650 50  0001 C CNN
+F 3 "~" H 6450 3650 50  0001 C CNN
+	1    6450 3650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 639C46B3
+P 6200 3650
+AR Path="/639C46B3" Ref="R?"  Part="1" 
+AR Path="/638A960E/639C46B3" Ref="R34"  Part="1" 
+AR Path="/64156100/639C46B3" Ref="R63"  Part="1" 
+AR Path="/6419F64A/639C46B3" Ref="R68"  Part="1" 
+F 0 "R68" V 6050 3650 50  0000 C CNN
+F 1 "22k" V 6125 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 3650 50  0001 C CNN
+F 3 "~" H 6200 3650 50  0001 C CNN
+	1    6200 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 639C46B9
+P 6075 3550
+AR Path="/639C46B9" Ref="#PWR?"  Part="1" 
+AR Path="/638A960E/639C46B9" Ref="#PWR0127"  Part="1" 
+AR Path="/64156100/639C46B9" Ref="#PWR0184"  Part="1" 
+AR Path="/6419F64A/639C46B9" Ref="#PWR0191"  Part="1" 
+F 0 "#PWR0191" H 6075 3400 50  0001 C CNN
+F 1 "+3V3" H 6075 3700 50  0000 C CNN
+F 2 "" H 6075 3550 50  0001 C CNN
+F 3 "" H 6075 3550 50  0001 C CNN
+	1    6075 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3700 5150 3775
+Wire Wire Line
+	5150 3875 5150 3775
+Connection ~ 5150 3775
+Wire Wire Line
+	5225 3775 5150 3775
+Wire Wire Line
+	6075 3550 6075 3650
+Wire Wire Line
+	6075 3650 6100 3650
+Wire Wire Line
+	6350 3650 6325 3650
+Wire Wire Line
+	6300 3650 6325 3650
+Connection ~ 6325 3650
+Wire Wire Line
+	6325 3650 6325 3875
+Connection ~ 6325 3875
+Wire Wire Line
+	6325 3875 6350 3875
+Wire Wire Line
+	6300 3975 6300 4025
+Wire Wire Line
+	6350 3975 6300 3975
+$Comp
+L power:GND #PWR?
+U 1 1 639C46CD
+P 6300 4025
+AR Path="/639C46CD" Ref="#PWR?"  Part="1" 
+AR Path="/638A960E/639C46CD" Ref="#PWR0128"  Part="1" 
+AR Path="/64156100/639C46CD" Ref="#PWR0185"  Part="1" 
+AR Path="/6419F64A/639C46CD" Ref="#PWR0192"  Part="1" 
+F 0 "#PWR0192" H 6300 3775 50  0001 C CNN
+F 1 "GND" H 6300 3875 50  0000 C CNN
+F 2 "" H 6300 4025 50  0001 C CNN
+F 3 "" H 6300 4025 50  0001 C CNN
+	1    6300 4025
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4825 4300 4825 4325
+$Comp
+L power:GND #PWR?
+U 1 1 639C46D4
+P 5150 4750
+AR Path="/639C46D4" Ref="#PWR?"  Part="1" 
+AR Path="/638A960E/639C46D4" Ref="#PWR0129"  Part="1" 
+AR Path="/64156100/639C46D4" Ref="#PWR0186"  Part="1" 
+AR Path="/6419F64A/639C46D4" Ref="#PWR0193"  Part="1" 
+F 0 "#PWR0193" H 5150 4500 50  0001 C CNN
+F 1 "GND" H 5150 4600 50  0000 C CNN
+F 2 "" H 5150 4750 50  0001 C CNN
+F 3 "" H 5150 4750 50  0001 C CNN
+	1    5150 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D?
+U 1 1 639C46DA
+P 4825 4425
+AR Path="/639C46DA" Ref="D?"  Part="1" 
+AR Path="/638A960E/639C46DA" Ref="D8"  Part="1" 
+AR Path="/64156100/639C46DA" Ref="D11"  Part="1" 
+AR Path="/6419F64A/639C46DA" Ref="D12"  Part="1" 
+F 0 "D12" V 4850 4675 50  0000 R CNN
+F 1 "PYRO 1" V 4775 4775 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 4825 4425 50  0001 C CNN
+F 3 "~" V 4825 4425 50  0001 C CNN
+	1    4825 4425
+	0    -1   -1   0   
+$EndComp
+Text Notes 4325 3650 0    50   ~ 10
+Pyro outputs
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 639C46E3
+P 6550 3875
+AR Path="/639C46E3" Ref="J?"  Part="1" 
+AR Path="/638A960E/639C46E3" Ref="J11"  Part="1" 
+AR Path="/64156100/639C46E3" Ref="J21"  Part="1" 
+AR Path="/6419F64A/639C46E3" Ref="J22"  Part="1" 
+F 0 "J22" H 6630 3867 50  0000 L CNN
+F 1 "PYRO 1" H 6630 3776 50  0000 L CNN
+F 2 "TXV_LIB:Molex_SL_1x2" H 6550 3875 50  0001 C CNN
+F 3 "" H 6550 3875 50  0001 C CNN
+F 4 "" H 6550 3875 50  0001 C CNN "Male Mate"
+F 5 "" H 6550 3875 50  0001 C CNN "Mate Datasheet"
+	1    6550 3875
+	1    0    0    -1  
+$EndComp
+Text HLabel 4725 4075 0    50   Input ~ 0
+Control
+Text HLabel 6600 3650 2    50   Output ~ 0
+Continuity
+Text HLabel 6900 4300 2    50   Output ~ 0
+Current
+$EndSCHEMATC

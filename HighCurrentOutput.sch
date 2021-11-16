@@ -1,0 +1,245 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 15 17
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 637A9A68
+P 6025 3325
+AR Path="/637A9A68" Ref="J?"  Part="1" 
+AR Path="/636FF559/637A9A68" Ref="J10"  Part="1" 
+AR Path="/64079439/637A9A68" Ref="J20"  Part="1" 
+F 0 "J20" H 6105 3317 50  0000 L CNN
+F 1 "OUT 1" H 6105 3226 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Nano-Fit_105313-xx02_1x02_P2.50mm_Horizontal" H 6025 3325 50  0001 C CNN
+F 3 "" H 6025 3325 50  0001 C CNN
+F 4 "" H 6025 3325 50  0001 C CNN "Male Mate"
+F 5 "" H 6025 3325 50  0001 C CNN "Mate Datasheet"
+	1    6025 3325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3425 5825 3425
+Wire Wire Line
+	5800 3225 5800 3250
+Wire Wire Line
+	5800 3325 5825 3325
+Text Notes 4475 3500 0    50   ~ 10
+High Current Outputs
+$Comp
+L power:+12V #PWR?
+U 1 1 637A9A72
+P 5800 3225
+AR Path="/637A9A72" Ref="#PWR?"  Part="1" 
+AR Path="/636FF559/637A9A72" Ref="#PWR0119"  Part="1" 
+AR Path="/64079439/637A9A72" Ref="#PWR0176"  Part="1" 
+F 0 "#PWR0176" H 5800 3075 50  0001 C CNN
+F 1 "+12V" H 5800 3375 50  0000 C CNN
+F 2 "" H 5800 3225 50  0001 C CNN
+F 3 "" H 5800 3225 50  0001 C CNN
+	1    5800 3225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3425 5800 3500
+$Comp
+L Device:D_Schottky_Small_ALT D?
+U 1 1 637A9A79
+P 5700 3375
+AR Path="/637A9A79" Ref="D?"  Part="1" 
+AR Path="/636FF559/637A9A79" Ref="D7"  Part="1" 
+AR Path="/64079439/637A9A79" Ref="D10"  Part="1" 
+F 0 "D10" V 5650 3575 50  0000 R CNN
+F 1 "Shottky" V 5725 3700 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123F" V 5700 3375 50  0001 C CNN
+F 3 "~" V 5700 3375 50  0001 C CNN
+	1    5700 3375
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5700 3275 5700 3250
+Wire Wire Line
+	5700 3250 5800 3250
+Connection ~ 5800 3250
+Wire Wire Line
+	5800 3250 5800 3325
+Wire Wire Line
+	5700 3475 5700 3500
+Wire Wire Line
+	5700 3500 5800 3500
+Connection ~ 5800 3500
+Wire Wire Line
+	5800 3500 5800 3525
+Wire Wire Line
+	4925 3725 5075 3725
+$Comp
+L Device:R_Small R?
+U 1 1 637A9A88
+P 5225 3850
+AR Path="/637A9A88" Ref="R?"  Part="1" 
+AR Path="/636FF559/637A9A88" Ref="R29"  Part="1" 
+AR Path="/64079439/637A9A88" Ref="R58"  Part="1" 
+F 0 "R58" H 5175 3825 50  0000 R CNN
+F 1 "9k1" H 5175 3900 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5225 3850 50  0001 C CNN
+F 3 "~" H 5225 3850 50  0001 C CNN
+	1    5225 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5225 3750 5225 3725
+$Comp
+L power:GND #PWR?
+U 1 1 637A9A8F
+P 5800 4200
+AR Path="/637A9A8F" Ref="#PWR?"  Part="1" 
+AR Path="/636FF559/637A9A8F" Ref="#PWR0120"  Part="1" 
+AR Path="/64079439/637A9A8F" Ref="#PWR0177"  Part="1" 
+F 0 "#PWR0177" H 5800 3950 50  0001 C CNN
+F 1 "GND" H 5800 4050 50  0000 C CNN
+F 2 "" H 5800 4200 50  0001 C CNN
+F 3 "" H 5800 4200 50  0001 C CNN
+	1    5800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 637A9A95
+P 5375 3725
+AR Path="/637A9A95" Ref="R?"  Part="1" 
+AR Path="/636FF559/637A9A95" Ref="R30"  Part="1" 
+AR Path="/64079439/637A9A95" Ref="R59"  Part="1" 
+F 0 "R59" V 5525 3725 50  0000 C CNN
+F 1 "120" V 5450 3725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5375 3725 50  0001 C CNN
+F 3 "~" H 5375 3725 50  0001 C CNN
+	1    5375 3725
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5475 3725 5500 3725
+Wire Wire Line
+	5225 3725 5275 3725
+Connection ~ 5225 3725
+$Comp
+L Device:R_Small R?
+U 1 1 637A9A9F
+P 5800 4075
+AR Path="/637A9A9F" Ref="R?"  Part="1" 
+AR Path="/636FF559/637A9A9F" Ref="R31"  Part="1" 
+AR Path="/64079439/637A9A9F" Ref="R60"  Part="1" 
+F 0 "R60" H 5600 4125 50  0000 L CNN
+F 1 "10m 1W" H 5450 4025 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 5800 4075 50  0001 C CNN
+F 3 "https://www.mouser.at/datasheet/2/414/ULR-1528281.pdf" H 5800 4075 50  0001 C CNN
+F 4 "ULR1S-R005FT2" H 5800 4075 50  0001 C CNN "Type"
+	1    5800 4075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3925 5800 3950
+Wire Wire Line
+	5800 4175 5800 4200
+Wire Wire Line
+	5800 3950 5925 3950
+Connection ~ 5800 3950
+Wire Wire Line
+	5800 3950 5800 3975
+$Comp
+L Device:LED_Small_ALT D?
+U 1 1 637A9AAA
+P 5075 4075
+AR Path="/637A9AAA" Ref="D?"  Part="1" 
+AR Path="/636FF559/637A9AAA" Ref="D6"  Part="1" 
+AR Path="/64079439/637A9AAA" Ref="D9"  Part="1" 
+F 0 "D9" V 5100 4275 50  0000 R CNN
+F 1 "OUT 1" V 5025 4375 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 5075 4075 50  0001 C CNN
+F 3 "~" V 5075 4075 50  0001 C CNN
+	1    5075 4075
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 637A9AB0
+P 5075 4200
+AR Path="/637A9AB0" Ref="#PWR?"  Part="1" 
+AR Path="/636FF559/637A9AB0" Ref="#PWR0121"  Part="1" 
+AR Path="/64079439/637A9AB0" Ref="#PWR0178"  Part="1" 
+F 0 "#PWR0178" H 5075 3950 50  0001 C CNN
+F 1 "GND" H 5075 4050 50  0000 C CNN
+F 2 "" H 5075 4200 50  0001 C CNN
+F 3 "" H 5075 4200 50  0001 C CNN
+	1    5075 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5075 4200 5075 4175
+Wire Wire Line
+	5075 3750 5075 3725
+Connection ~ 5075 3725
+Wire Wire Line
+	5075 3725 5225 3725
+Wire Wire Line
+	5075 3950 5075 3975
+Wire Wire Line
+	5225 3975 5225 3950
+$Comp
+L power:GND #PWR?
+U 1 1 637A9ABC
+P 5225 3975
+AR Path="/637A9ABC" Ref="#PWR?"  Part="1" 
+AR Path="/636FF559/637A9ABC" Ref="#PWR0122"  Part="1" 
+AR Path="/64079439/637A9ABC" Ref="#PWR0179"  Part="1" 
+F 0 "#PWR0179" H 5225 3725 50  0001 C CNN
+F 1 "GND" H 5225 3825 50  0000 C CNN
+F 2 "" H 5225 3975 50  0001 C CNN
+F 3 "" H 5225 3975 50  0001 C CNN
+	1    5225 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 637A9AC2
+P 5075 3850
+AR Path="/6015C35D/637A9AC2" Ref="R?"  Part="1" 
+AR Path="/637A9AC2" Ref="R?"  Part="1" 
+AR Path="/636FF559/637A9AC2" Ref="R28"  Part="1" 
+AR Path="/64079439/637A9AC2" Ref="R57"  Part="1" 
+F 0 "R57" H 4950 3875 50  0000 C CNN
+F 1 "120" H 4950 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5075 3850 50  0001 C CNN
+F 3 "~" H 5075 3850 50  0001 C CNN
+	1    5075 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 637A9AC9
+P 5700 3725
+AR Path="/637A9AC9" Ref="Q?"  Part="1" 
+AR Path="/636FF559/637A9AC9" Ref="Q1"  Part="1" 
+AR Path="/64079439/637A9AC9" Ref="Q2"  Part="1" 
+F 0 "Q2" H 5905 3771 50  0000 L CNN
+F 1 "SISA88DN or similar" H 5905 3680 50  0000 L CNN
+F 2 "TXV_LIB:PowerPAK_1212-8" H 5900 3825 50  0001 C CNN
+F 3 "~" H 5700 3725 50  0001 C CNN
+	1    5700 3725
+	1    0    0    -1  
+$EndComp
+Text HLabel 4925 3725 0    50   Input ~ 0
+Control
+Text HLabel 5925 3950 2    50   Output ~ 0
+Current
+$EndSCHEMATC

@@ -353,19 +353,19 @@ Pyro outputs
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 639C46E3
-P 6550 3875
+P 6550 3975
 AR Path="/639C46E3" Ref="J?"  Part="1" 
 AR Path="/638A960E/639C46E3" Ref="J11"  Part="1" 
 AR Path="/64156100/639C46E3" Ref="J21"  Part="1" 
 AR Path="/6419F64A/639C46E3" Ref="J22"  Part="1" 
-F 0 "J22" H 6630 3867 50  0000 L CNN
-F 1 "PYRO 1" H 6630 3776 50  0000 L CNN
-F 2 "TXV_LIB:Molex_SL_1x2" H 6550 3875 50  0001 C CNN
-F 3 "" H 6550 3875 50  0001 C CNN
-F 4 "" H 6550 3875 50  0001 C CNN "Male Mate"
-F 5 "" H 6550 3875 50  0001 C CNN "Mate Datasheet"
-	1    6550 3875
-	1    0    0    -1  
+F 0 "J22" H 6630 3967 50  0000 L CNN
+F 1 "PYRO 1" H 6630 3876 50  0000 L CNN
+F 2 "TXV_LIB:Molex_SL_1x2_Vertical" H 6550 3975 50  0001 C CNN
+F 3 "" H 6550 3975 50  0001 C CNN
+F 4 "" H 6550 3975 50  0001 C CNN "Male Mate"
+F 5 "" H 6550 3975 50  0001 C CNN "Mate Datasheet"
+	1    6550 3975
+	1    0    0    1   
 $EndComp
 Text HLabel 4725 4075 0    50   Input ~ 0
 Control

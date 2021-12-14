@@ -36,7 +36,7 @@ F 3 "~" H 6300 4450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 5300 4950 0    50   ~ 0
-R_ILIM = 22k\n--> 2A Current Limit
+R_ILIM = 56k\n--> 860mA Current Limit
 Text Notes 6350 4375 0    50   ~ 0
 1k*Iout/1040
 Wire Wire Line
@@ -124,7 +124,7 @@ AR Path="/638A960E/639C4675" Ref="R33"  Part="1"
 AR Path="/64156100/639C4675" Ref="R62"  Part="1" 
 AR Path="/6419F64A/639C4675" Ref="R67"  Part="1" 
 F 0 "R33" H 5050 4400 50  0000 R CNN
-F 1 "22k" H 5050 4475 50  0000 R CNN
+F 1 "56k" H 5050 4475 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 4425 50  0001 C CNN
 F 3 "~" H 5100 4425 50  0001 C CNN
 	1    5100 4425

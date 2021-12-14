@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 17
+Sheet 4 18
 Title ""
 Date ""
 Rev ""
@@ -261,21 +261,6 @@ Wire Wire Line
 Wire Wire Line
 	5425 3925 5500 3925
 Connection ~ 5500 3925
-$Comp
-L TXV_LIB:+7.4V #PWR?
-U 1 1 63587B8A
-P 5650 3650
-AR Path="/63587B8A" Ref="#PWR?"  Part="1" 
-AR Path="/634CE57C/63587B8A" Ref="#PWR0118"  Part="1" 
-AR Path="/63F9E75F/63587B8A" Ref="#PWR0170"  Part="1" 
-AR Path="/63FE6097/63587B8A" Ref="#PWR0175"  Part="1" 
-F 0 "#PWR0118" H 5650 3500 50  0001 C CNN
-F 1 "+7.4V" V 5650 3750 50  0000 L CNN
-F 2 "" H 5650 3650 50  0001 C CNN
-F 3 "" H 5650 3650 50  0001 C CNN
-	1    5650 3650
-	0    -1   -1   0   
-$EndComp
 Text Notes 5900 4250 0    50   ~ 0
 (Gain 20)
 Text HLabel 5700 3350 0    50   Input ~ 0
@@ -284,4 +269,80 @@ Text HLabel 5275 3525 2    50   Output ~ 0
 Feedback
 Text HLabel 6000 4350 2    50   Output ~ 0
 Current
+$Comp
+L power:VS #PWR0118
+U 1 1 62FB5B89
+P 5650 3650
+AR Path="/634CE57C/62FB5B89" Ref="#PWR0118"  Part="1" 
+AR Path="/63F9E75F/62FB5B89" Ref="#PWR0170"  Part="1" 
+AR Path="/63FE6097/62FB5B89" Ref="#PWR0175"  Part="1" 
+F 0 "#PWR0118" H 5450 3500 50  0001 C CNN
+F 1 "VS" V 5650 3775 50  0000 L CNN
+F 2 "" H 5650 3650 50  0001 C CNN
+F 3 "" H 5650 3650 50  0001 C CNN
+	1    5650 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D?
+U 1 1 632B8B39
+P 4800 3925
+AR Path="/632B8B39" Ref="D?"  Part="1" 
+AR Path="/636FF559/632B8B39" Ref="D?"  Part="1" 
+AR Path="/64079439/632B8B39" Ref="D?"  Part="1" 
+AR Path="/634CE57C/632B8B39" Ref="D14"  Part="1" 
+AR Path="/63F9E75F/632B8B39" Ref="D15"  Part="1" 
+AR Path="/63FE6097/632B8B39" Ref="D16"  Part="1" 
+F 0 "D14" V 4825 4125 50  0000 R CNN
+F 1 "OUT 1" V 4750 4225 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 4800 3925 50  0001 C CNN
+F 3 "~" V 4800 3925 50  0001 C CNN
+	1    4800 3925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 632B8B3F
+P 4800 4050
+AR Path="/632B8B3F" Ref="#PWR?"  Part="1" 
+AR Path="/636FF559/632B8B3F" Ref="#PWR?"  Part="1" 
+AR Path="/64079439/632B8B3F" Ref="#PWR?"  Part="1" 
+AR Path="/634CE57C/632B8B3F" Ref="#PWR0209"  Part="1" 
+AR Path="/63F9E75F/632B8B3F" Ref="#PWR0210"  Part="1" 
+AR Path="/63FE6097/632B8B3F" Ref="#PWR0211"  Part="1" 
+F 0 "#PWR0209" H 4800 3800 50  0001 C CNN
+F 1 "GND" H 4800 3900 50  0000 C CNN
+F 2 "" H 4800 4050 50  0001 C CNN
+F 3 "" H 4800 4050 50  0001 C CNN
+	1    4800 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4050 4800 4025
+Wire Wire Line
+	4800 3800 4800 3825
+$Comp
+L Device:R_Small R?
+U 1 1 632B8B47
+P 4800 3700
+AR Path="/6015C35D/632B8B47" Ref="R?"  Part="1" 
+AR Path="/632B8B47" Ref="R?"  Part="1" 
+AR Path="/636FF559/632B8B47" Ref="R?"  Part="1" 
+AR Path="/64079439/632B8B47" Ref="R?"  Part="1" 
+AR Path="/634CE57C/632B8B47" Ref="R10"  Part="1" 
+AR Path="/63F9E75F/632B8B47" Ref="R11"  Part="1" 
+AR Path="/63FE6097/632B8B47" Ref="R74"  Part="1" 
+F 0 "R10" H 4675 3725 50  0000 C CNN
+F 1 "120" H 4675 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 3700 50  0001 C CNN
+F 3 "~" H 4800 3700 50  0001 C CNN
+	1    4800 3700
+	1    0    0    -1  
+$EndComp
+Text HLabel 4675 3475 0    50   Input ~ 0
+LED
+Wire Wire Line
+	4675 3475 4800 3475
+Wire Wire Line
+	4800 3475 4800 3600
 $EndSCHEMATC

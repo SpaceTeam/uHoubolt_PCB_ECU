@@ -1,4 +1,4 @@
-update=Di 16 Nov 2021 20:29:47
+update=Mi 15 Dez 2021 16:31:04
 version=1
 last_client=kicad
 [general]
@@ -30,7 +30,7 @@ CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
-RequireCourtyardDefinitions=0
+RequireCourtyardDefinitions=1
 ProhibitOverlappingCourtyards=1
 MinTrackWidth=0.2
 MinViaDiameter=0.4
@@ -41,7 +41,8 @@ MinHoleToHole=0.25
 TrackWidth1=0.2
 TrackWidth2=0.3
 TrackWidth3=0.5
-TrackWidth4=1.5
+TrackWidth4=1
+TrackWidth5=1.5
 ViaDiameter1=0.5
 ViaDrill1=0.3
 dPairWidth1=0.2

@@ -6876,7 +6876,7 @@
     (uuid 00000000-0000-0000-0000-000063229df9)
     (property "Reference" "U6" (id 0) (at 75.565 146.685 0))
     (property "Value" "STM32G491MET6-LQFP80" (id 1) (at 75.565 167.64 90))
-    (property "Footprint" "Package_QFP:LQFP-80_14x14mm_P0.65mm" (id 2) (at 76.835 177.8 90)
+    (property "Footprint" "Package_QFP:LQFP-80_12x12mm_P0.5mm" (id 2) (at 76.835 177.8 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32g491me.pdf" (id 3) (at 75.565 149.86 0)
@@ -10731,7 +10731,7 @@
       (reference "U5") (unit 1) (value "MCP2562FDx-x_MF") (footprint "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm")
     )
     (path "/00000000-0000-0000-0000-000063229df9"
-      (reference "U6") (unit 1) (value "STM32G491MET6-LQFP80") (footprint "Package_QFP:LQFP-80_14x14mm_P0.65mm")
+      (reference "U6") (unit 1) (value "STM32G491MET6-LQFP80") (footprint "Package_QFP:LQFP-80_12x12mm_P0.5mm")
     )
     (path "/00000000-0000-0000-0000-000060ab74cf"
       (reference "U7") (unit 1) (value "ICM-20602") (footprint "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y")
